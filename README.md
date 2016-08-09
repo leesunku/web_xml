@@ -25,65 +25,70 @@
 #### 서블릿 설정
   + servlet-name : 아래 servlet-mapping에 기술주기 위한 식별자
   + servlet-class : 실제 서블릿 클래스, 패키지까지 정확하게 기술
+<br><br>
 <XMP>
-<servlet> : 서블릿 객체 설정
+<servlet> : 서블릿 객체 설정<br><br>
 
-<servlet-name> : 객체의 이름    </servlet-name>
+<servlet-name> : 객체의 이름    </servlet-name><br><br>
 
-<servlet-class> : 객체를 생성할 클래스    </servlet-class>
+<servlet-class> : 객체를 생성할 클래스    </servlet-class><br><br>
 
-</servlet>
-</XMP>
+</servlet><br><br>
+</XMP><br><br>
   + servlet-name : 위에 servlet에 명시한 이름
   + url-pattern : 어떠한 URL경로로 접근할 수 있는지를 명시
-<servlet-mapping>
+<br><br>
+<XMP>
+<servlet-mapping><br><br>
 
-<servlet-name> 이름 </servlet-name> 일할 서블릿 객체의 이름
+<servlet-name> 이름 </servlet-name> 일할 서블릿 객체의 이름<br><br>
 
-<url-pattern>패턴</url-pattern> 클라이언트가 요청할 url 패턴
+<url-pattern>패턴</url-pattern> 클라이언트가 요청할 url 패턴<br><br>
 
 </servlet-mapping>
-
+</XMP><br><br>
   + 기타요소
-<!-- 세션 기간 설정 -->
-    <session-config>
-      <session-timeout>
-        30
-      </session-timeout>
-    </session-config>
+<br><br>
+<XMP>
+<!-- 세션 기간 설정 --><br>
+    <session-config><br>
+      <session-timeout><br>
+        30<br>
+      </session-timeout><br>
+    </session-config><br><br>
 
-    <!-- mime 매핑 -->
-    <mime-mapping>
-      <extension>txt</extension>
-      <mime-type>text/plain</mime-type>
-    </mime-mapping>
+    <!-- mime 매핑 --><br>
+    <mime-mapping><br
+      <extension>txt</extension><br>
+      <mime-type>text/plain</mime-type><br>
+    </mime-mapping><br><br>
 
-    <!-- 시작페이지 설정 -->
-    <welcome-file-list>
-      <welcome-file>index.jsp</welcome-file>
-      <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
+    <!-- 시작페이지 설정 --><br>
+    <welcome-file-list><br>
+      <welcome-file>index.jsp</welcome-file><br>
+      <welcome-file>index.html</welcome-file><br>
+    </welcome-file-list><br><br>
 
-    <!-- 존재하지 않는 페이지, 404에러시 처리 페이지 설정 -->
-    <error-page>
-      <error-code>404</error-code>
-      <location>/error.jsp</location>
-    </error-page>
+    <!-- 존재하지 않는 페이지, 404에러시 처리 페이지 설정 --><br>
+    <error-page><br>
+      <error-code>404</error-code><br>
+      <location>/error.jsp</location><br>
+    </error-page><br><br>
 
-    <!-- 태그 라이브러리 설정 -->
-    <taglib>
-      <taglib-uri>taglibs</taglib-uri>
-      <taglib-location>/WEB-INF/taglibs-cache.tld</taglib-location>
-    </taglib>
+    <!-- 태그 라이브러리 설정 --><br>
+    <taglib><br>
+      <taglib-uri>taglibs</taglib-uri><br>
+      <taglib-location>/WEB-INF/taglibs-cache.tld</taglib-location><br>
+    </taglib><br><br>
 
-    <!-- resource 설정 -->
-    <resource-ref>
-      <res-ref-name>jdbc/jack1972</res-ref-name>
-      <res-type>javax.sql.DataSource</res-type>
-      <res-auth>Container</res-auth>
-    </resource-ref>
+    <!-- resource 설정 --><br>
+    <resource-ref><br>
+      <res-ref-name>jdbc/jack1972</res-ref-name><br>
+      <res-type>javax.sql.DataSource</res-type><br>
+      <res-auth>Container</res-auth><br>
+    </resource-ref><br><br>
 
-
+</XMP><br><br>
 
 
 
