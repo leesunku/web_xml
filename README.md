@@ -25,6 +25,7 @@
 #### 서블릿 설정
   + servlet-name : 아래 servlet-mapping에 기술주기 위한 식별자
   + servlet-class : 실제 서블릿 클래스, 패키지까지 정확하게 기술
+<XMP>
 <servlet> : 서블릿 객체 설정
 
 <servlet-name> : 객체의 이름    </servlet-name>
@@ -32,7 +33,7 @@
 <servlet-class> : 객체를 생성할 클래스    </servlet-class>
 
 </servlet>
-
+</XMP>
   + servlet-name : 위에 servlet에 명시한 이름
   + url-pattern : 어떠한 URL경로로 접근할 수 있는지를 명시
 <servlet-mapping>
